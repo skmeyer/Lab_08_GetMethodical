@@ -23,6 +23,10 @@ public class DevTest
         boolean yesNo = SafeInput.getYNConfirm(in, "Is the sky blue?");
         System.out.println("You chose: " + yesNo);
 
+        String phoneRegEx = SafeInput.getRegExString(in, "Enter your phone number", "^\\d{3}-\\d{3}-\\d{4}$");
+        System.out.println("Your phone number is: " + phoneRegEx);
+
 
     }
+
 }

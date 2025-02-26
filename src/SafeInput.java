@@ -169,6 +169,28 @@ public class SafeInput
         return retTrueFalse;
     }
 
+    public static String getRegExString(Scanner pipe, String prompt, String regEx)
+    {
+        String retRegEx = "";
+        boolean done = false;
+        do
+        {
+            System.out.print("\n" + prompt + ": ");
+            retRegEx = pipe.nextLine();
+            if(retRegEx.matches(regEx))
+            {
+                done = true;
+            }
+            else
+            {
+                System.out.println("Your input was invalid: " + retRegEx);
+            }
+
+        }while(!done);
+
+        return retRegEx;
+    }
+
 
     
 
