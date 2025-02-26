@@ -76,7 +76,7 @@ public class SafeInput
 
         do
         {
-            System.out.print("\n" + prompt + " between " + low + " and " + high + " : ");
+            System.out.print("\n" + prompt + " [" + low + "-" + high + "] : ");
             if(pipe.hasNextInt())
             {
                 retInt = pipe.nextInt();
@@ -112,7 +112,7 @@ public class SafeInput
 
         do
         {
-            System.out.print("\n" + prompt + " between " + low + " and " + high + " : ");
+            System.out.print("\n" + prompt + " [" + low + "-" + high + "] : ");
             if(pipe.hasNextDouble())
             {
                 retDouble = pipe.nextDouble();
