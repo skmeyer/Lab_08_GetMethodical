@@ -26,7 +26,6 @@ public class DevTest
         String phoneRegEx = SafeInput.getRegExString(in, "Enter your phone number", "^\\d{3}-\\d{3}-\\d{4}$");
         System.out.println("Your phone number is: " + phoneRegEx);
 
-
     }
 
 }

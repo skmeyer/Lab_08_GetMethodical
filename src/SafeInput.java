@@ -191,6 +191,51 @@ public class SafeInput
         return retRegEx;
     }
 
+    public static String prettyHeader(String msg)
+    {
+        for(int starNum = 0; starNum <= 60; starNum++)
+        {
+            System.out.print("*");
+        }
+        System.out.println("\n");
+        if(msg.length() % 2 == 0)
+        {
+            System.out.print("***");
+            int spaceNum = (54 - msg.length()) / 2;
+            for(int space = 0; space <= spaceNum; space++)
+            {
+                System.out.print(" ");
+            }
+            System.out.print(msg);
+            for(int space = 0; space <= spaceNum - 1; space++)
+            {
+                System.out.print(" ");
+            }
+            System.out.print("***");
+        }
+        else
+        {
+            System.out.print("***");
+            int spaceNum = (54 - msg.length()) / 2;
+            for(int space = 0; space <= spaceNum + 1; space++)
+            {
+                System.out.print(" ");
+            }
+            System.out.print(msg);
+            for(int space = 0; space <= spaceNum - 1; space++)
+            {
+                System.out.print(" ");
+            }
+        }
+        System.out.print("***");
+        System.out.println("\n");
+        for(int starNum = 0; starNum < 61; starNum++)
+        {
+            System.out.print("*");
+        }
+        return msg;
+    }
+
 
     
 
